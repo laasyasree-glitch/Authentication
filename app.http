@@ -8,3 +8,23 @@ Content-Type: application/json
   "gender": "male",
   "location": "Detroit"
 }
+
+###
+
+POST http://localhost:3007/login
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+
+###
+POST http://localhost:3007/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "richard@123"
+}
